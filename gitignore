@@ -1,5 +1,5 @@
 # never upload your actual database password
-config/db.php
+config/db_connect.php
 
 # OS generated files
 .DS_Store
