@@ -1,0 +1,16 @@
+# never upload your actual database password
+config/db.php
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & text editor files and other stuff
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+logs/
+*.log
+tmp/
