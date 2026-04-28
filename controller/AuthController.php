@@ -34,9 +34,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 case 'HoD':
                     header("Location: /dashboard_hod.php");
                     break;
+                case 'Dean':
+                    header("Location: /dashboard_dean.php");
+                    break;
                 case 'QA':
                     header("Location: /dashboard_qa.php");
                     break;
+                default:
+                    header("Location: /index.php"); 
             }
             exit();
         } else {
