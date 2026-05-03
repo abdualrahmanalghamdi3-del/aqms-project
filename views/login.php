@@ -1,18 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Al Yamamah University</title>
+
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
-    <div class="auth-box">
-        <h2>Welcome Back</h2>
-        <?php if(isset($_GET['error'])) echo "<p class='error'>Invalid credentials!</p>"; ?>
-        <form method="POST" action="index.php?action=login_process">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
+
+    <main class="login-page">
+        <section class="login-card">
+
+            <div class="login-logo">
+                <img src="../public/images/Al_Yamamah_University_logo.png" alt="Al Yamamah University Logo">
+            </div>
+
+            <div class="login-header">
+                <h2>Welcome Back</h2>
+                <p>Login to access your account</p>
+            </div>
+
+            <?php if (isset($_GET['error'])) : ?>
+                <p class="error-message">Invalid username or password.</p>
+            <?php endif; ?>
+
+            <form method="POST" action="../index.php?action=login_process" class="login-form">
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+
+            </form>
+
+        </section>
+    </main>
+
 </body>
 </html>
