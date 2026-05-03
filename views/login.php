@@ -13,7 +13,7 @@
         <section class="login-card">
 
             <div class="login-logo">
-                <img src="../public/images/yamamah_logo.png" alt="Al Yamamah University Logo">
+                <img src="../public/images/public/images/Al_Yamamah_University_logo.png" alt="Al Yamamah University Logo">
             </div>
 
             <div class="login-header">
